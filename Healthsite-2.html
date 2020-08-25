@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HealthSite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <style>
+    	@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+        *{
+          	box-sizing: border-box;
+          }
+      
+        body {
+        			background: #1a1a1a;
+          	margin:0;
+          	padding:0;
+          	font-family: 'Roboto', sans-serif;
+        		}
+        h2 {
+        			font-size: 35px;
+        			font-weight: 300;
+        				}
+        h2 span {
+        			font-size: 45px;
+        				}
+        p{
+        			font-size: 15px;
+        			font-weight: 100;
+        				}
+    
+        .container{
+        			background: #000000;
+          	display: flex;
+          	flex-flow: row wrap;
+          	
+          	transition: all 0.5s ease-in-out;
+        		}
+        		
+        	.container > div{
+          	flex: 50%;
+          	background-size: cover;
+          	background-attachment: fixed;
+          	border: 3px solid #1a1a1a;
+          	height: 230px;  
+          	
+          	display: flex;
+          	flex-direction: column;
+          	align-items: center;
+          	justify-content: center;      
+        		}
+        		
+        	.container > div:hover{
+        			opacity: 0.7;
+        			transform: scale(0.98);
+        		}
+        		
+        	.container > div i{
+        			font-size: 50px;
+        			}
+        	.bg1 {
+        			background: url(https://images.unsplash.com/photo-1531101768483-e21ee3347f74?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+        			color:white;
+        					}
+        	.bg2 {
+        			background: url(https://images.unsplash.com/photo-1551523890-c365f9f38d6b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+        			color:black;
+        			font-weight:600;
+        					}
+       
+         #c2, #c3, #c4, #c5, #c8, #c9{
+          	flex: 25%;   
+        		}
+           					
+
+       @media screen and (max-width:400px){
+          .container{
+          		display: flex;
+          		flex-direction: row;
+          		
+        			}
+           .container > div{
+               flex: 100%;
+               border: 3px solid #1a1a1a;
+               background-attachment: fixed;
+               height:220px;
+               text-align: center;
+               
+               display: flex;
+          	   flex-direction: column;
+              	align-items: center;
+             	justify-content: center;
+            }
+           
+           .bg1{
+           		  background: url(https://images.unsplash.com/photo-1531101768483-e21ee3347f74?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+           		  
+           	}
+           .bg2{
+           		  background: url(https://images.unsplash.com/photo-1551523890-c365f9f38d6b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+           		  color: black;
+           	}
+           #c2, #c3, #c4 {
+           			 flex: 100%;
+           		}
+           
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg1" id="c1">
+            <i class="fab fa-gratipay"></i>
+            <h2>BPM</h2>
+        			 <p>Track your average heart rate</p>
+        </div>
+        
+         <div class="bg1" id="c2">
+            <i class="fas fa-thermometer-three-quarters"></i>
+            <h2>Body Temp.</h2>
+        			 <p>Track your average body temperature</p>
+        </div>
+        
+         <div class="bg2" id="c3">
+            <i class="fas fa-tint"></i>
+            <h2>Hydration</h2>
+        			 <p>Check your hydration levels</p>
+        </div>
+        
+         <div class="bg1" id="c4">
+            <i class="fas fa-battery-three-quarters"></i>
+            <h2>Sleep & Recovery</h2>
+        			 <p>Track your hours slept and recovery</p>
+        </div>
+        
+        <div class="bg1" id="c5">
+            <i class="fas fa-utensils"></i>
+            <h2>Calorie Intake</h2>
+        			 <p>Track your calorie intake for the day </p>
+        </div>
+        
+        <div class="bg2" id="c6">
+            <i class="far fa-clipboard"></i>
+            <h2>Current Weight</h2>
+        			 <p>Track your body weight</p>
+        </div>
+        
+        <div class="bg1" id="c7">
+            <i class="fas fa-walking"></i>
+            <h2>Steps</h2>
+        			 <p>Track your steps for the day</p>
+        </div>
+        
+        <div class="bg2" id="c8">
+            <i class="fas fa-cloud-sun"></i>
+            <h2>Outdoors</h2>
+        			 <p>Track your time spent outdoors today</p>
+        </div>
+        
+        <div class="bg2" id="c9">
+            <i class="fab fa-twitter"></i>
+            <h2>Follow Me</h2>
+        			 <p>Follow me on twitter <b>@mod5ied</b> for more fun projects </p>
+        </div>
+    </div>
+</body>
+</html>
